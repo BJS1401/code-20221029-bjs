@@ -23,9 +23,9 @@ for key, value in dict_.items():
 for i, j in vaccines.items():
   print(f"{i}:{j}")
 
-  import plotly.express as px
-  import plotly.offline as py
+import plotly.express as px
+import plotly.offline as py
 
-  vaccine_map = px.choropleth(data, locations='iso_code', color='vaccines')
-  vaccine_map.update_layout(height=300, margin={"r": 0, "t": 0, "l": 0, "b": 0})
-  vaccine_map.show()
+vaccine_map = px.choropleth(data, locations='iso_code', color='vaccines')
+vaccine_map.update_layout(height=300, margin={"r": 0, "t": 0, "l": 0, "b": 0})
+vaccine_map.show()
