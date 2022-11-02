@@ -21,7 +21,7 @@ vaccines = {}
 for key, value in dict_.items():
   vaccines[key] = set(value)
 for i, j in vaccines.items():
-  print(f"{i}:>>{j}")
+  print(f"{i}:{j}")
 
   import plotly.express as px
   import plotly.offline as py
